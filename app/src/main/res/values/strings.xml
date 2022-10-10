@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">dental_surgeon_new</string>
+    <string name="dr_oleg_mayami">Dr. Oleg Mayami</string>
+    <string name="dental_surgeon">Dental surgeon</string>
+    <string name="your_friendly_dental_friend">Your friendly Dental Friend</string>
+    <string name="make_an_appointment">Make an appointment</string>
+    <string name="oleg_mayami_gmail_com">oleg.mayami@gmail.com</string>
+    <string name="www_dental_com">www.dental.com</string>
+    <string name="whatsapp_me">WhatsApp me</string>
+    <string name="save_to_phone_book">Save to phone book</string>
+    <string name="abdumomunova_146">Abdumomunova 146</string>
+    <string name="to_call">To call</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="email_us">Email us</string>
+    <string name="visit_website">Visit website</string>
+    <string name="telegram">Telegram</string>
+    <string name="save_contact">Save contact</string>
+    <string name="our_location">Our Location</string>
+    <string name="shopping_center_asia_mall_1st_floor">Shopping center Asia Mall 1st floor</string>
+    <string name="open_map">Open map</string>
+    <string name="text">Text</string>
+    <string name="call">Call</string>
+    <string name="email">Email</string>
+    <string name="scan_to_connect">Scan to connect</string>
+    <string name="_996_771_677_010">+996 (771) 677 010</string>
+</resources>

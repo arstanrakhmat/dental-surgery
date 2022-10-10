@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView"
+                android:layout_width="98dp"
+                android:layout_height="106dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="24dp"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@drawable/photo_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="199dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/dr_oleg_mayami"
+                android:textColor="#000000"
+                android:textFontWeight="700"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/open_sans_light"
+                android:textColor="#000000"
+                app:drawableTopCompat="@drawable/line"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="104dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="17dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/dental_surgeon"
+                android:textColor="#000000"
+                android:textFontWeight="600"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="185dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/your_friendly_dental_friend"
+                android:textColor="#000000"
+                android:textFontWeight="600"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <Button
+                android:id="@+id/btn_appointment"
+                android:layout_width="353dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/my_button"
+                android:drawableLeft="@drawable/icon1"
+                android:paddingStart="30dp"
+                android:paddingEnd="26dp"
+                android:text="@string/make_an_appointment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/btn_gmail"
+                android:layout_width="250dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="24dp"
+                android:drawableLeft="@drawable/message"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/oleg_mayami_gmail_com"
+                android:textColor="#000000"
+                android:textFontWeight="700"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_appointment" />
+
+            <TextView
+                android:id="@+id/btn_site"
+                android:layout_width="250dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="25dp"
+                android:drawableLeft="@drawable/world"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/www_dental_com"
+                android:textColor="#000000"
+                android:textFontWeight="700"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_gmail" />
+
+            <TextView
+                android:id="@+id/btn_whatsapp"
+                android:layout_width="250dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="25dp"
+                android:drawableLeft="@drawable/ic_whatsapp"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/whatsapp_me"
+                android:textColor="#000000"
+                android:textFontWeight="700"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_site" />
+
+            <TextView
+                android:id="@+id/btn_phonebook"
+                android:layout_width="250dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="25dp"
+                android:drawableLeft="@drawable/ic_phone_book_first"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/save_to_phone_book"
+                android:textColor="#000000"
+                android:textFontWeight="700"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_whatsapp" />
+
+            <TextView
+                android:id="@+id/btn_location"
+                android:layout_width="250dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="25dp"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/abdumomunova_146"
+                android:textColor="#000000"
+                android:textFontWeight="700"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_phonebook" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ThirdActivity">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:foreground="@drawable/image_gradient"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/layout_bg"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView3">
+
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginEnd="55dp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="@string/dr_oleg_mayami"
+                    android:textColor="#1A82FC"
+                    android:textFontWeight="600"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btn_message_3page"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="110dp"
+                    android:backgroundTint="#1A82FC"
+                    android:src="@drawable/ic_message_white"
+                    app:fabCustomSize="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btn_call_3page2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="110dp"
+                    android:backgroundTint="#1A82FC"
+                    android:src="@drawable/ic_call_white"
+                    app:fabCustomSize="50dp"
+                    app:layout_constraintStart_toEndOf="@+id/btn_message_3page"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btn_email_3page"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginEnd="35dp"
+                    android:backgroundTint="#1A82FC"
+                    android:src="@drawable/ic_email_white"
+                    app:fabCustomSize="50dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_call_3page2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="24dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="@string/text"
+                    android:textColor="#000000"
+                    android:textFontWeight="400"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_message_3page" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="21dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="79dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="@string/call"
+                    android:textColor="#000000"
+                    android:textFontWeight="400"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView11"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_call_3page2" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="31dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="78dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="@string/email"
+                    android:textColor="#000000"
+                    android:textFontWeight="400"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView10"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_email_3page" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="90dp"
+                android:foregroundGravity="center"
+                app:cardCornerRadius="250dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView3">
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/photo_1" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/qr_code"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="105dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="31dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/scan_to_connect"
+                android:textColor="#3E3D3D"
+                android:textFontWeight="400"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="120dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/_996_771_677_010"
+                android:textColor="#1A82FC"
+                android:textFontWeight="600"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="175dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/oleg_mayami_gmail_com"
+                android:textColor="#3E3D3D"
+                android:textFontWeight="400"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="325dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="11dp"
+                android:elevation="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic__location_blue" />
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="19dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="@string/abdumomunova_146"
+                    android:textColor="#3E3D3D"
+                    android:textFontWeight="600"
+                    android:textSize="14sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="325dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:elevation="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_world_blue" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="19dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="@string/www_dental_com"
+                    android:textColor="#3E3D3D"
+                    android:textFontWeight="600"
+                    android:textSize="14sp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="35dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/insta_logo"
+                app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="35dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/facebook_logo"
+                app:layout_constraintEnd_toStartOf="@+id/imageView7"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="52dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/linkedin_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>
