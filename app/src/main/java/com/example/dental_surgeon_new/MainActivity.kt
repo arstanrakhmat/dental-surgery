@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun sendEmail() {
+    fun sendEmail() {
         val email = binding.btnGmail.text.toString()
 
         val intent = Intent(Intent.ACTION_SENDTO)
